@@ -59,9 +59,9 @@ class ContactsController extends Controller
         $this->obj_contact->name = $this->arr_input['name'];
         $this->obj_contact->email = $this->arr_input['email'];
         $this->obj_contact->phone_number = $this->arr_input['phone_number'];
+        // $this->obj_contact->save();
+        dd($this);
 
-        $q = Contact::search($request->all());
-        dd($q);
         return 'ok';
 
     }
